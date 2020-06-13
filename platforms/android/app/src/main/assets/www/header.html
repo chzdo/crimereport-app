@@ -1,0 +1,12 @@
+   <div data-role="header"  data-position='fixed' data-tap-toggle='false' style='background: #000033; position:fixed'>
+             
+                <a  onclick='switchPage("home.html")' class=" ui-btn-left wow fadeIn p-2" data-wow-delay='0.8s'><i  id='h_t' class="zmdi  zmdi-home"></i> </a>
+
+                <h1 class='ui-title' id='title'> Home </h1>
+            </div>
+<script>
+    $("#title").text(window.localStorage.getItem('id'));
+    function switchIcon(id){
+        $("#h_t").removeClass("zmdi-home").addClass("zmdi-arrow-back");
+    }
+    </script>
